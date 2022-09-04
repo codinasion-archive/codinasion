@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // data
+      "@/data/*": ["data/*"],
+
+      // public
+      "@/public/*": ["public/*"],
+
+      // src
+      "@/components/*": ["src/components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/themes/*": ["src/themes/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/views/*": ["src/views/*"],
+
+      // styles
+      "@/styles/*": ["styles/*"]
+    }
+  }
+}
