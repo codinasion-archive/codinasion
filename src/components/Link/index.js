@@ -6,6 +6,9 @@ import NextLink from "next/link";
 import MuiLink from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
 
+// mui tooltip
+import Tooltip from "@mui/material/Tooltip";
+
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled("a")({});
 
@@ -76,24 +79,28 @@ const Link = React.forwardRef(function Link(props, ref) {
   if (isExternal) {
     if (noLinkStyle) {
       return (
-        <Anchor
+        <Tooltip title={href} placement="top">
+          <Anchor
+            className={className}
+            href={href}
+            target="_blank"
+            ref={ref}
+            {...other}
+          />
+        </Tooltip>
+      );
+    }
+
+    return (
+      <Tooltip title={href} placement="top">
+        <MuiLink
           className={className}
           href={href}
           target="_blank"
           ref={ref}
           {...other}
         />
-      );
-    }
-
-    return (
-      <MuiLink
-        className={className}
-        href={href}
-        target="_blank"
-        ref={ref}
-        {...other}
-      />
+      </Tooltip>
     );
   }
 

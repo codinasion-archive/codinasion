@@ -38,6 +38,10 @@ const FooterLinks = [
   {
     title: "Misc",
     data: [
+      {
+        text: "Archived",
+        url: "https://github.com/codinasion-archive",
+      },
       // {
       //   text: "sitemap.xml",
       //   url: "/sitemap.xml",

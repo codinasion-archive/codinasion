@@ -2,6 +2,8 @@ import { Typography, Grid } from "@mui/material";
 
 import siteMetadata from "@/data/siteMetadata";
 
+import Banner from "@/public/banner.png";
+
 function Header() {
   return (
     <>
@@ -13,15 +15,20 @@ function Header() {
         sx={{
           py: 10,
           px: 3,
-        }}
-        style={{
-          backgroundColor: "grey",
+          position: "relative",
+          backgroundColor: "grey.800",
+          color: "#fff",
+          mb: 4,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundImage: `url(${Banner.src})`,
         }}
       >
-        <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+        <Typography component="h1" variant="h3" color="black" gutterBottom>
           <b>{siteMetadata.title.toUpperCase()}</b>
         </Typography>
-        <Typography variant="h5" color="inherit" paragraph>
+        <Typography variant="h5" color="black" paragraph>
           {siteMetadata.description}
         </Typography>
       </Grid>
