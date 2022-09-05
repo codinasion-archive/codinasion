@@ -42,11 +42,11 @@ const MyApp = (props) => {
         <link rel="manifest" href={`${manifest}`} />
 
         {/* humans.txt */}
-        {/* <link
+        <link
           type="text/plain"
           rel="author"
-          href="https://codinasion.vercel.app/api/humans"
-        /> */}
+          href="https://api.codinasion.org/humans.txt"
+        />
 
         {/* algolia doc search */}
         <link
