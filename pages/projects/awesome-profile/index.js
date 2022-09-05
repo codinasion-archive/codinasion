@@ -64,7 +64,8 @@ export default function AwesomeProfile({ profiles }) {
               Here is the list of awesome github profile READMEs submitted by
               the community.
               <br />
-              You can add your profile also by clicking the ADD PROFILE Button.
+              You can add your profile also by clicking the &apos;ADD
+              PROFILE&apos; Button.
             </Typography>
           </Grid>
 
@@ -178,5 +179,6 @@ export async function getStaticProps() {
     props: {
       profiles,
     },
+    revalidate: 3600,
   };
 }

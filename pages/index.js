@@ -33,5 +33,6 @@ export async function getStaticProps() {
       stats,
       projects,
     },
+    revalidate: 3600,
   };
 }
