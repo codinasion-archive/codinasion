@@ -2,9 +2,12 @@ import { Grid, Typography, Container } from "@mui/material";
 
 import ProjectCard from "@/components/ProjectCard";
 
+import Seo from "@/components/Seo";
+
 export default function Projects({ projects }) {
   return (
     <>
+      <Seo title="Projects" description="List of our Open Source projects." />
       <Container
         disableGutters
         maxWidth="sm"

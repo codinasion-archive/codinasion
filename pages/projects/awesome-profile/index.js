@@ -20,6 +20,8 @@ import Link from "@/components/Link";
 
 import ReadmeCard from "@/views/AwesomeProfile/ReadmeCard";
 
+import Seo from "@/components/Seo";
+
 export default function AwesomeProfile({ profiles }) {
   const [data, setData] = React.useState(profiles);
   const [search, setSearch] = React.useState("");
@@ -57,6 +59,10 @@ export default function AwesomeProfile({ profiles }) {
 
   return (
     <>
+      <Seo
+        title="Awesome Profile Readme"
+        description="Here is the list of awesome github profile READMEs submitted by the community. You can also add your profile by clicking the ADD PROFILE Button."
+      />
       <Container disableGutters maxWidth="lg" component="main" sx={{ p: 3 }}>
         <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} sm={7} style={{ display: "flex" }}>
@@ -64,7 +70,7 @@ export default function AwesomeProfile({ profiles }) {
               Here is the list of awesome github profile READMEs submitted by
               the community.
               <br />
-              You can add your profile also by clicking the &apos;ADD
+              You can also add your profile by clicking the &apos;ADD
               PROFILE&apos; Button.
             </Typography>
           </Grid>
