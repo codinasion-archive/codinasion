@@ -16,7 +16,7 @@ function Header() {
           py: 10,
           px: 3,
           position: "relative",
-          backgroundColor: "grey.800",
+          backgroundColor: "white",
           color: "#fff",
           mb: 4,
           backgroundSize: "cover",
