@@ -14,6 +14,15 @@ const nextConfig = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/humans.txt",
+        destination: "https://api.codinasion.org/humans.txt",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

@@ -42,18 +42,18 @@ const FooterLinks = [
         text: "Archived",
         url: "https://github.com/codinasion-archive",
       },
-      // {
-      //   text: "sitemap.xml",
-      //   url: "/sitemap.xml",
-      // },
-      // {
-      //   text: "humans.txt",
-      //   url: "/api/humans",
-      // },
-      // {
-      //   text: "robots.txt",
-      //   url: "/robots.txt",
-      // },
+      {
+        text: "sitemap.xml",
+        url: "/sitemap.xml",
+      },
+      {
+        text: "humans.txt",
+        url: "https://api.codinasion.org/humans.txt",
+      },
+      {
+        text: "robots.txt",
+        url: "/robots.txt",
+      },
     ],
   },
 ];
