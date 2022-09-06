@@ -1,5 +1,9 @@
+const withPWA = require("next-pwa")({
+  dest: "public",
+});
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withPWA({
   reactStrictMode: true,
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4.
@@ -23,6 +27,6 @@ const nextConfig = {
       },
     ];
   },
-};
+});
 
 module.exports = nextConfig;

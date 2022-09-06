@@ -16,9 +16,9 @@ import "@docsearch/css";
 // layout
 import DefaultLayout from "@/layouts/DefaultLayout";
 
-import Favicon from "../public/favicon/favicon.ico";
-import Logo192 from "../public/favicon/android-chrome-192x192.png";
-import manifest from "../public/favicon/manifest.json";
+import Favicon from "@/public/favicon/favicon.ico";
+import Logo192 from "@/public/favicon/android-chrome-192x192.png";
+import manifest from "@/public/favicon/manifest.json";
 
 import siteMetadata from "@/data/siteMetadata";
 
@@ -34,7 +34,10 @@ const MyApp = (props) => {
   return getLayout(
     <CacheProvider value={emotionCache}>
       <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
         <meta charSet="utf-8" />
         <link rel="icon" href={`${Favicon.src}`} />
         <meta name="theme-color" content="#000000" />
