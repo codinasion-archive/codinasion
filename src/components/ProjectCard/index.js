@@ -48,6 +48,15 @@ function ProjectCard({ project }) {
             {project.description}
           </Typography>
         </CardContent>
+        {project.demo !== "" && (
+          <Link href={project.demo}>
+            <CardActions>
+              <Button fullWidth variant="outlined">
+                DEMO
+              </Button>
+            </CardActions>
+          </Link>
+        )}
         <Link href={project.url}>
           <CardActions>
             <Button fullWidth variant="outlined">
