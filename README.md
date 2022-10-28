@@ -4,7 +4,7 @@
 
 An Open Source community, dedicated to Open Source projects
 
-[![License][1]][2] [![Github Repo Size][3]][4] [![Github Contributors][5]][6] [![Github Last Commit][7]][8]
+[![License][1]][2] [![GitHub Repo Size][3]][4] [![GitHub Contributors][5]][6] [![GitHub Last Commit][7]][8]
 
 </div>
 
