@@ -61,13 +61,13 @@ export default function AwesomeProfile({ profiles }) {
     <>
       <Seo
         title="Awesome Profile Readme"
-        description="Here is the list of awesome github profile READMEs submitted by the community. You can also add your profile by clicking the ADD PROFILE Button."
+        description="Here is the list of awesome GitHub profile READMEs submitted by the community. You can also add your profile by clicking the ADD PROFILE Button."
       />
       <Container disableGutters maxWidth="lg" component="main" sx={{ p: 3 }}>
         <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} sm={7} style={{ display: "flex" }}>
             <Typography variant="body1" color="black" paragraph>
-              Here is the list of awesome github profile READMEs submitted by
+              Here is the list of awesome GitHub profile READMEs submitted by
               the community.
               <br />
               You can also add your profile by clicking the &apos;ADD
