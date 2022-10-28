@@ -22,7 +22,7 @@ const FooterLinks = [
     title: "Links",
     data: [
       {
-        text: "Github",
+        text: "GitHub",
         url: "https://github.com/codinasion",
       },
       {
