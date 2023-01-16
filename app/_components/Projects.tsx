@@ -26,7 +26,7 @@ const projects = [
     description:
       "Good 1st Issue helps you find good first issues to contribute to open source projects.",
     imageAlt: "Good 1st Issue",
-    href: "https://github.com/x4ty/good-1st-issue",
+    href: "https://github.com/codinasion/good-1st-issue",
   },
 ];
 
