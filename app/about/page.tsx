@@ -1,10 +1,5 @@
-import About from 'app/_components/about';
-import React from 'react';
+import About from "app/_components/about";
 
-function page() {
-    return (
-        <About/>
-    );
+export default function page() {
+  return <About />;
 }
-
-export default page;

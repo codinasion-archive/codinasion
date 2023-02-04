@@ -8,8 +8,8 @@ type header = {
 function Header({ title, subTitle, style }: header) {
   return (
     <header className={` ${style}`}>
-      <h2 className="text-4xl uppercase font-bold dark:text-white">{title}</h2>
-      <p className="text-black/50 mt-2 dark:text-white/50">{subTitle}</p>
+      <h2 className="text-3xl md:text-4xl uppercase font-bold dark:text-white">{title}</h2>
+      <p className="text-gray-500">{subTitle}</p>
     </header>
   );
 }

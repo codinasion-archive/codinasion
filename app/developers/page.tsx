@@ -1,11 +1,12 @@
-import React from 'react';
+"use client";
+import Devs from "app/_components/DevsComp/Devs";
+import TestimonialContainer from "app/_components/TestimonialComp/TestimonialContainer";
 
-function Users() {
-    return (
-        <div>
-            <h1>this is users page</h1>
-        </div>
-    );
+export default function Page() {
+  return (
+    <div className="relative z-10">
+      <Devs forward={false} header={false} />
+      <TestimonialContainer />
+    </div>
+  );
 }
-
-export default Users;

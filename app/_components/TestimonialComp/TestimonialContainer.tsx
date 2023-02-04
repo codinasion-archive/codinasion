@@ -18,8 +18,8 @@ export default function TestimonialContainer() {
   }, [testimonialId]);
 
   return (
-    <div className="">
-      <div className="container mx-auto p-2 md:p-5">
+    <div>
+      <div className="lg:container mx-auto p-3 lg:p-5">
         <Header title={"Testimonial"} subTitle={"Some words from our users"} />
       </div>
       <div className="bg-very-light dark:bg-very-dark">

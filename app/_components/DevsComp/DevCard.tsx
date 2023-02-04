@@ -6,7 +6,8 @@ type DevType = {
   imgUrl: string;
   devName: string;
 };
-export default function Dev({ imgUrl, devName }: DevType) {
+
+export default function DevCard({ imgUrl, devName }: DevType) {
   return (
     <Link
       href={`/developers/${devName}`}

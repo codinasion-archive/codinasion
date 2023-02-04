@@ -16,7 +16,7 @@ export const repoList: repoListType = [
     desc,
     imgUrl:
       "https://images.unsplash.com/photo-1605661538700-68f27cb6509d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-    repoUrl: "https://github.com/codinasion",
+    repoUrl: "codinasion",
     style: "",
   },
   {
@@ -25,7 +25,7 @@ export const repoList: repoListType = [
     desc,
     imgUrl:
       "https://images.unsplash.com/photo-1605557626540-ae67a4e1a62a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-    repoUrl: "https://github.com/codinasion",
+    repoUrl: "codinasion-tools",
     style: " flex-row-reverse border-red",
   },
   {
@@ -34,7 +34,7 @@ export const repoList: repoListType = [
     desc,
     imgUrl:
       "https://images.unsplash.com/photo-1605557833946-8f264331f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-    repoUrl: "https://github.com/codinasion",
+    repoUrl: "Link-free",
     style: "",
   },
   {
@@ -43,7 +43,7 @@ export const repoList: repoListType = [
     desc,
     imgUrl:
       "https://images.unsplash.com/photo-1605557626569-8e90be178386?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-    repoUrl: "https://github.com/codinasion",
+    repoUrl: "program",
     style: " flex-row-reverse",
   },
 ];

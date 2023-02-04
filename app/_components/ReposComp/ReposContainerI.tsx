@@ -4,7 +4,7 @@ import RepoCard from "./RepoCard";
 
 export default function RepoContainerI() {
   return (
-    <div className="px-2 container mx-auto space-y-5">
+    <div className="px-2 lg:container mx-auto space-y-5">
       {repoList.map((item) => (
         <RepoCard
           key={Math.random() * 50 + item.title}

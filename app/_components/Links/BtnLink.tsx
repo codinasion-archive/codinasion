@@ -6,9 +6,9 @@ type linkType = {
   style?: string;
   children?: React.ReactNode;
 };
-export default function LinkI({
+export default function BtnLink({
   url,
-  target = "_top",
+  target = "_self",
   style,
   children,
 }: linkType) {

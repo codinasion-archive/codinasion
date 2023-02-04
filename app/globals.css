@@ -31,6 +31,20 @@
 
         }
     }
+    .glowII {
+        animation: glowI 5s linear infinite;
+    }
+
+    @keyframes glowI {
+        0% {
+            box-shadow: 0 0 0 white;
+        }
+
+        50% {
+            box-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
+
+        }
+    }
 
     .testimonial{
         animation: testimonial 1s linear alternate;
