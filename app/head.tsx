@@ -1,7 +1,7 @@
-import Favicon from "@/public/favicon/favicon.ico";
-import logo from "@/public/logo.png";
 import manifest from "@/public/favicon/manifest.json";
+import Favicon from "@/public/favicon/favicon.ico";
 import siteMetadata from "@/data/siteMetadata";
+import logo from "@/public/logo.png";
 
 export default function Head() {
   return (

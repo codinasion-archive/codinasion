@@ -1,54 +1,58 @@
-"use client";
-import Image from "next/image";
-import React from "react";
+"use clint";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
 import { GoRepoForked } from "react-icons/go";
-import { HiUserGroup } from "react-icons/hi";
 import { IoTelescope } from "react-icons/io5";
 import LinkI from "../Links/BtnLink";
+import Atropos from "atropos/react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { childScale, scrollScale } from "app/_framerVariants/framerVariants";
 
 type status = {
   forks: number;
   stars: number;
-  watchers: number;
 };
 type repoCardType = {
-  id: number;
   imgUrl: string;
   title: string;
   desc: string;
   repoUrl: string;
   style?: string;
-  order?: number[];
   status: status;
 };
-
-export default function RepoCardII({
-  id,
+export default function BasicRepoCard({
   imgUrl,
   title,
   desc,
   repoUrl,
   style,
-  order,
   status,
 }: repoCardType) {
   return (
-    <div
-      className={`grid grid-cols-12 rounded-[50px] p-2 hover:bg-very-light dark:hover:bg-very-dark mx-auto gap-2 md:gap-8 xl:gap-10 ${style}`}
+    <motion.div
+      initial="offscreen"
+      whileInView={"onscreen"}
+      viewport={{ amount: 0.6, once: false }}
+      variants={scrollScale(0.8)}
+      className={`grid grid-cols-12 gap-2 md:gap-8 xl:gap-10 rounded-[50px] hover:bg-very-light dark:hover:bg-very-dark mx-auto ${style}`}
     >
-      <Image
-        src={imgUrl}
-        width={"400"}
-        height={"400"}
-        alt={`${title} repo preview`}
-        className={`col-span-12 lg:col-span-3 w-full aspect-video lg:aspect-square rounded-[50px] object-cover dark:shadow-darkShadow-lg shadow-lightShadow-lg ${
-          order && order.includes(id) ? "md:order-1" : "md:order-[0]"
-        }`}
-      />
-      <div className="container col-span-12 md:col-span-9 rounded-[50px] flex flex-col items-start gap-3 p-2 justify-center text-black dark:text-white">
-        <h2 className="text-2xl md:text-3xl font-semibold">{title}</h2>
+      <Atropos
+        className={`col-span-12 lg:col-span-3 lg:aspect-square aspect-video w-full rounded-[50px] bg-very-dark dark:bg-very-light dark:shadow-darkShadow-lg shadow-lightShadow-lg atropos-banner `}
+      >
+        <Image
+          src={imgUrl}
+          width={"800"}
+          height={"800"}
+          alt={`${title} repo preview`}
+          className={`w-full h-full rounded-[50px] object-cover 
+        `}
+        />
+      </Atropos>
+      <div
+        className={`col-span-12 md:col-span-9 rounded-[50px] flex flex-col items-start gap-3 p-2 justify-center text-black dark:text-white `}
+      >
+        <h2 className={` font-semibold text-2xl md:text-3xl `}>{title}</h2>
         <ul className="flex gap-2 text-sm">
           <li className="flex border-2 dark:shadow-darkShadow-sm shadow-lightShadow-sm items-center justify-center gap-2 p-1 px-3 rounded-full bg-white dark:bg-black">
             <AiOutlineStar />
@@ -58,12 +62,8 @@ export default function RepoCardII({
             <GoRepoForked />
             {status.forks}
           </li>
-          <li className="flex border-2 dark:shadow-darkShadow-sm shadow-lightShadow-sm items-center justify-center gap-2 p-1 px-3 rounded-full bg-white dark:bg-black">
-            <HiUserGroup />
-            {status.watchers}
-          </li>
         </ul>
-        <p className="lg:w-[90%] opacity-80">{desc}</p>
+        <p className={`lg:w-[90%] dark:text-gray-300 text-gray-700 `}>{desc}</p>
         <div className="flex gap-2 mt-2 lg:gap-5">
           <LinkI
             url={`/repositories/${repoUrl}`}
@@ -82,6 +82,6 @@ export default function RepoCardII({
           </LinkI>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

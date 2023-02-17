@@ -8,17 +8,31 @@ const reducer = (state: any, action: actionType) => {
     case "THEME":
       return { ...state, theme: action.payload };
     case "DEVS":
-      // console.log(state.devs, action.payload, "layout ", action.payload.page);
       return {
         ...state,
         devs: {
           data: [...state.devs.data, ...action.payload.data],
           page: action.payload.page,
-          call: action.payload.call,
+        },
+      };
+    case "REPOS":
+      return {
+        ...state,
+        repos: {
+          data: [...state.repos.data, ...action.payload.data],
+          page: action.payload.page,
+        },
+      };
+    case "SHOWOFFREPOS":
+      // console.log(action.payload)
+      return {
+        ...state,
+        showoffRepos: {
+          data: [...state.showoffRepos.data, ...action.payload.data],
         },
       };
     default:
       return state;
   }
 };
-export default reducer
+export default reducer;

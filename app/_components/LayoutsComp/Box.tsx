@@ -1,5 +1,3 @@
-import React from "react";
-
 type boxType = {
   title: string;
   style?: string;
